@@ -1,9 +1,12 @@
 import { StatusBar } from 'expo-status-bar';
 import { Text, View } from 'react-native';
-import MainPage from './pages/MainPage';
+import 
 
 export default function App() {
   return (
-    <MainPage/>
+    <View>
+      <Text>teste</Text>
+      <StatusBar style="auto" />
+    </View>
   );
 }

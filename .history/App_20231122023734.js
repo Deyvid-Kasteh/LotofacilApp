@@ -4,6 +4,9 @@ import MainPage from './pages/MainPage';
 
 export default function App() {
   return (
-    <MainPage/>
+    <View>
+      <Text>teste</Text>
+      <StatusBar style="auto" />
+    </View>
   );
 }
