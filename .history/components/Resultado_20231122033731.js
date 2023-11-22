@@ -18,7 +18,7 @@ const Resultado = () => {
       >
         <Card.Content>
           <Title style={{ color: "#E9ECF2" }}>Resultado lotofacil</Title>
-          <Paragraph style={{ color: "#E9ECF2" }}>Conteúdo do card.</Paragraph>
+          < >Conteúdo do card.</>
         </Card.Content>
       </Card>
     </View>

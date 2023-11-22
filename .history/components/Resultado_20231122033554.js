@@ -9,16 +9,16 @@ const Resultado = () => {
         style={{
           width: 300,
           height: 200,
-          // backgroundColor: "#E9ECF2",
-          // backgroundColor: "#394A59",
-          // backgroundColor: "#687B8C",
-          backgroundColor: "#95ACBF",
-          // backgroundColor: "#BFCDD9",
+        //   backgroundColor: "#E9ECF2",
+            // backgroundColor: "#394A59",
+            // backgroundColor: "#687B8C",
+            backgroundColor: "#95ACBF",
+            // backgroundColor: "#BFCDD9",
         }}
       >
         <Card.Content>
-          <Title style={{ color: "#E9ECF2" }}>Resultado lotofacil</Title>
-          <Paragraph style={{ color: "#E9ECF2" }}>Conteúdo do card.</Paragraph>
+          <Title style={{ color: "white" }}>Resultado lotofacil</Title>
+          <Paragraph>Conteúdo do card.</Paragraph>
         </Card.Content>
       </Card>
     </View>
