@@ -25,7 +25,6 @@ const Resultado = () => {
           // backgroundColor: "#BFCDD9",
         }}
       >
-        {/* <Bubble />
         <Bubble />
         <Bubble />
         <Bubble />
@@ -39,7 +38,8 @@ const Resultado = () => {
         <Bubble />
         <Bubble />
         <Bubble />
-        <Bubble /> */}
+        <Bubble />
+        <Bubble />
       </View>
     </View>
   );

@@ -1,7 +1,7 @@
 import { View, Text } from "react-native";
 import React from "react";
 import { Card, Title, Paragraph } from "react-native-paper";
-// import Bubble from "./Bubble";
+import 
 
 const Resultado = () => {
   return (
