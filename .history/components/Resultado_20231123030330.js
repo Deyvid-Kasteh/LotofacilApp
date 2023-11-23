@@ -69,20 +69,20 @@ const Resultado = () => {
           }}
         >
           <Bubble corDeFundo={backgroundColor} />
-          <Bubble corDeFundo={backgroundColor} />
-          <Bubble corDeFundo={backgroundColor} />
-          <Bubble corDeFundo={backgroundColor} />
-          <Bubble corDeFundo={backgroundColor} />
-          <Bubble corDeFundo={backgroundColor} />
-          <Bubble corDeFundo={backgroundColor} />
-          <Bubble corDeFundo={backgroundColor} />
-          <Bubble corDeFundo={backgroundColor} />
-          <Bubble corDeFundo={backgroundColor}/>
-          <Bubble corDeFundo={backgroundColor}/>
-          <Bubble corDeFundo={backgroundColor}/>
-          <Bubble corDeFundo={backgroundColor}/>
-          <Bubble corDeFundo={backgroundColor}/>
-          <Bubble corDeFundo={backgroundColor}/>
+          <Bubble />
+          <Bubble />
+          <Bubble />
+          <Bubble />
+          <Bubble />
+          <Bubble />
+          <Bubble />
+          <Bubble />
+          <Bubble />
+          <Bubble />
+          <Bubble />
+          <Bubble />
+          <Bubble />
+          <Bubble />
         </View>
       </View>
       <View

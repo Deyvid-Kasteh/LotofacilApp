@@ -3,18 +3,16 @@ import React, { useState } from "react";
 import Bubble from "./Bubble";
 
 const Resultado = () => {
-  const [backgroundColor, setBackgroundColor] = useState("#95ACBF");
-  const [opacity, setopacity] = useState(null);
+
+
+
+  const [backgroundColor, setBackgroundColor] = useState("blue");
+  const [textColor, setTextColor] = useState("white");
 
   const changeStyle = () => {
     // Lógica para mudar o estilo
-    if (backgroundColor === "#95ACBF") {
-      setBackgroundColor("#394A59")
-          console.log("222222");
-    } else {
-      setBackgroundColor("#95ACBF")
-          console.log("111111");
-    }
+    setBackgroundColor("red");
+    setTextColor("black");
     console.log("teste")
   };
 
@@ -68,27 +66,27 @@ const Resultado = () => {
             justifyContent: "space-evenly",
           }}
         >
-          <Bubble corDeFundo={backgroundColor} />
-          <Bubble corDeFundo={backgroundColor} />
-          <Bubble corDeFundo={backgroundColor} />
-          <Bubble corDeFundo={backgroundColor} />
-          <Bubble corDeFundo={backgroundColor} />
-          <Bubble corDeFundo={backgroundColor} />
-          <Bubble corDeFundo={backgroundColor} />
-          <Bubble corDeFundo={backgroundColor} />
-          <Bubble corDeFundo={backgroundColor} />
-          <Bubble corDeFundo={backgroundColor}/>
-          <Bubble corDeFundo={backgroundColor}/>
-          <Bubble corDeFundo={backgroundColor}/>
-          <Bubble corDeFundo={backgroundColor}/>
-          <Bubble corDeFundo={backgroundColor}/>
-          <Bubble corDeFundo={backgroundColor}/>
+          <Bubble />
+          <Bubble />
+          <Bubble />
+          <Bubble />
+          <Bubble />
+          <Bubble />
+          <Bubble />
+          <Bubble />
+          <Bubble />
+          <Bubble />
+          <Bubble />
+          <Bubble />
+          <Bubble />
+          <Bubble />
+          <Bubble />
         </View>
       </View>
       <View
         style={{
           width: 300,
-          height: 110,
+          height: 220,
           padding: 10,
           borderRadius: 10,
           flexWrap: "wrap",
@@ -96,8 +94,7 @@ const Resultado = () => {
           alignContent: "center",
           justifyContent: "space-evenly",
           elevation: 5,
-          backgroundColor: backgroundColor,
-          marginTop: 10,
+          backgroundColor: "#95ACBF",
 
           // alignItems: "center",
           // backgroundColor: "#E9ECF2",
@@ -105,7 +102,33 @@ const Resultado = () => {
           // backgroundColor: "#687B8C",
           // backgroundColor: "#BFCDD9",
         }}
-      ></View>
+      >
+        
+        <View
+          style={{
+            flexWrap: "wrap",
+            flexDirection: "row",
+            alignContent: "center",
+            justifyContent: "space-evenly",
+          }}
+        >
+          <Bubble />
+          <Bubble />
+          <Bubble />
+          <Bubble />
+          <Bubble />
+          <Bubble />
+          <Bubble />
+          <Bubble />
+          <Bubble />
+          <Bubble />
+          <Bubble />
+          <Bubble />
+          <Bubble />
+          <Bubble />
+          <Bubble />
+        </View>
+      </View>
     </View>
   );
 };

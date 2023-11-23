@@ -8,14 +8,14 @@ const Bubble = (props) => {
         width: 35,
         height: 35,
         // backgroundColor: "#394A59",
-        backgroundColor: props.corDeFundo,
+        backgroundColor: props.,
         borderRadius: 50,
         alignContent: "center",
         justifyContent: "center",
         alignItems: "center",
         margin: 6,
         elevation: 5,
-        opacity: 1,
+        opacity: 0.15,
       }}
     >
       <Text

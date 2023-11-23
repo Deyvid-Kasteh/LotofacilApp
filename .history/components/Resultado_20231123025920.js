@@ -4,7 +4,6 @@ import Bubble from "./Bubble";
 
 const Resultado = () => {
   const [backgroundColor, setBackgroundColor] = useState("#95ACBF");
-  const [opacity, setopacity] = useState(null);
 
   const changeStyle = () => {
     // Lógica para mudar o estilo
@@ -69,20 +68,20 @@ const Resultado = () => {
           }}
         >
           <Bubble corDeFundo={backgroundColor} />
-          <Bubble corDeFundo={backgroundColor} />
-          <Bubble corDeFundo={backgroundColor} />
-          <Bubble corDeFundo={backgroundColor} />
-          <Bubble corDeFundo={backgroundColor} />
-          <Bubble corDeFundo={backgroundColor} />
-          <Bubble corDeFundo={backgroundColor} />
-          <Bubble corDeFundo={backgroundColor} />
-          <Bubble corDeFundo={backgroundColor} />
-          <Bubble corDeFundo={backgroundColor}/>
-          <Bubble corDeFundo={backgroundColor}/>
-          <Bubble corDeFundo={backgroundColor}/>
-          <Bubble corDeFundo={backgroundColor}/>
-          <Bubble corDeFundo={backgroundColor}/>
-          <Bubble corDeFundo={backgroundColor}/>
+          <Bubble />
+          <Bubble />
+          <Bubble />
+          <Bubble />
+          <Bubble />
+          <Bubble />
+          <Bubble />
+          <Bubble />
+          <Bubble />
+          <Bubble />
+          <Bubble />
+          <Bubble />
+          <Bubble />
+          <Bubble />
         </View>
       </View>
       <View

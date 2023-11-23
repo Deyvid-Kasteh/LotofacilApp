@@ -15,7 +15,7 @@ const Bubble = (props) => {
         alignItems: "center",
         margin: 6,
         elevation: 5,
-        opacity: 1,
+        opacity: 0.15,
       }}
     >
       <Text

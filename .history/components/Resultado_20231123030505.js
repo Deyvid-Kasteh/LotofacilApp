@@ -77,12 +77,12 @@ const Resultado = () => {
           <Bubble corDeFundo={backgroundColor} />
           <Bubble corDeFundo={backgroundColor} />
           <Bubble corDeFundo={backgroundColor} />
-          <Bubble corDeFundo={backgroundColor}/>
-          <Bubble corDeFundo={backgroundColor}/>
-          <Bubble corDeFundo={backgroundColor}/>
-          <Bubble corDeFundo={backgroundColor}/>
-          <Bubble corDeFundo={backgroundColor}/>
-          <Bubble corDeFundo={backgroundColor}/>
+          <Bubble corDeFundo={backgroundColor}corDeFundo={backgroundColor}/>
+          <Bubble corDeFundo={backgroundColor}corDeFundo={backgroundColor}/>
+          <Bubble corDeFundo={backgroundColor}corDeFundo={backgroundColor}/>
+          <Bubble corDeFundo={backgroundColor}corDeFundo={backgroundColor}/>
+          <Bubble corDeFundo={backgroundColor}corDeFundo={backgroundColor}/>
+          <Bubble corDeFundo={backgroundColor}corDeFundo={backgroundColor}/>
         </View>
       </View>
       <View

@@ -1,21 +1,19 @@
 import { View, Text } from "react-native";
 import React from "react";
 
-const Bubble = (props) => {
+const Bubble = () => {
   return (
     <View
       style={{
         width: 35,
         height: 35,
-        // backgroundColor: "#394A59",
-        backgroundColor: props.corDeFundo,
+        backgroundColor: "#394A59",
         borderRadius: 50,
         alignContent: "center",
         justifyContent: "center",
         alignItems: "center",
         margin: 6,
-        elevation: 5,
-        opacity: 1,
+        // elevation: 5,
       }}
     >
       <Text
@@ -23,7 +21,7 @@ const Bubble = (props) => {
           color: "#E9ECF2",
         }}
       >
-        X
+        01
       </Text>
     </View>
   );

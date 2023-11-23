@@ -3,17 +3,29 @@ import React, { useState } from "react";
 import Bubble from "./Bubble";
 
 const Resultado = () => {
-  const [backgroundColor, setBackgroundColor] = useState("#95ACBF");
-  const [opacity, setopacity] = useState(null);
+
+
+
+  const [backgroundColor, setBackgroundColor] = useState("blue");
 
   const changeStyle = () => {
+
+
+
+
+
+
+
     // Lógica para mudar o estilo
+
+
     if (backgroundColor === "#95ACBF") {
-      setBackgroundColor("#394A59")
-          console.log("222222");
+          setBackgroundColor("#394A59")
+
+
     } else {
-      setBackgroundColor("#95ACBF")
-          console.log("111111");
+          setBackgroundColor("#95ACBF")
+
     }
     console.log("teste")
   };
@@ -68,21 +80,21 @@ const Resultado = () => {
             justifyContent: "space-evenly",
           }}
         >
-          <Bubble corDeFundo={backgroundColor} />
-          <Bubble corDeFundo={backgroundColor} />
-          <Bubble corDeFundo={backgroundColor} />
-          <Bubble corDeFundo={backgroundColor} />
-          <Bubble corDeFundo={backgroundColor} />
-          <Bubble corDeFundo={backgroundColor} />
-          <Bubble corDeFundo={backgroundColor} />
-          <Bubble corDeFundo={backgroundColor} />
-          <Bubble corDeFundo={backgroundColor} />
-          <Bubble corDeFundo={backgroundColor}/>
-          <Bubble corDeFundo={backgroundColor}/>
-          <Bubble corDeFundo={backgroundColor}/>
-          <Bubble corDeFundo={backgroundColor}/>
-          <Bubble corDeFundo={backgroundColor}/>
-          <Bubble corDeFundo={backgroundColor}/>
+          <Bubble />
+          <Bubble />
+          <Bubble />
+          <Bubble />
+          <Bubble />
+          <Bubble />
+          <Bubble />
+          <Bubble />
+          <Bubble />
+          <Bubble />
+          <Bubble />
+          <Bubble />
+          <Bubble />
+          <Bubble />
+          <Bubble />
         </View>
       </View>
       <View
@@ -96,7 +108,7 @@ const Resultado = () => {
           alignContent: "center",
           justifyContent: "space-evenly",
           elevation: 5,
-          backgroundColor: backgroundColor,
+          backgroundColor: "#95ACBF",
           marginTop: 10,
 
           // alignItems: "center",
@@ -105,7 +117,8 @@ const Resultado = () => {
           // backgroundColor: "#687B8C",
           // backgroundColor: "#BFCDD9",
         }}
-      ></View>
+      >
+      </View>
     </View>
   );
 };
