@@ -90,7 +90,6 @@ const Resultado = () => {
           // backgroundColor: "#394A59",
           backgroundColor: "#687B8C",
           // backgroundColor: "#BFCDD9",
-          marginBottom: 10,
         }}
       >
         <TouchableOpacity
