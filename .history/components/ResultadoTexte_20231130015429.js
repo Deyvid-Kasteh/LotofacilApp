@@ -15,7 +15,7 @@ const bolhasContainerStyle = {
   alignContent: "center",
   justifyContent: "space-evenly",
 };
-const Resultado = () => {
+const ResultadoTexte = () => {
   const [viewHeight, setViewHeight] = useState(50);
   const toggleHeight = () => {
     const newHeight = viewHeight === 50 ? 200 : 50;
@@ -70,9 +70,8 @@ const Resultado = () => {
     <View
       style={{
         flex: 1,
-        justifyContent: "flex-start",
+        justifyContent: "center",
         alignItems: "center",
-        marginTop: 50
       }}
     >
       <View
@@ -126,7 +125,7 @@ const Resultado = () => {
               borderRadius: 20,
               marginBottom: 5,
             },
-            alturaView1 === 50
+            viewHeight === 50
               ? { width: 190, backgroundColor: "#BFCDD9" }
               : { width: 240, backgroundColor: "#E9ECF2" },
           ]}
@@ -198,4 +197,4 @@ const Resultado = () => {
   );
 };
 
-export default Resultado;
+export default ResultadoTexte;

@@ -70,9 +70,8 @@ const Resultado = () => {
     <View
       style={{
         flex: 1,
-        justifyContent: "flex-start",
+        justifyContent: "",
         alignItems: "center",
-        marginTop: 50
       }}
     >
       <View

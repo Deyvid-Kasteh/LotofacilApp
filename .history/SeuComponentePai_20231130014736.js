@@ -14,14 +14,6 @@ const ExampleComponent = () => {
     <View onLayout={onLayout}>
       {/* O conteúdo da sua View aqui */}
       <Text>Exemplo de Conteúdo</Text>
-      <Text>Exemplo de Conteúdo</Text>
-      <Text>Exemplo de Conteúdo</Text>
-      <Text>Exemplo de Conteúdo</Text>
-      <Text>Exemplo de Conteúdo</Text>
-      <Text>Exemplo de Conteúdo</Text>
-      <Text>Exemplo de Conteúdo</Text>
-      <Text>Exemplo de Conteúdo</Text>
-      <Text>Exemplo de Conteúdo</Text>
     </View>
   );
 };

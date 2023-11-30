@@ -14,8 +14,9 @@ const MainPage = () => {
       style={{
         flex: 1,
         alignItems: "center",
-        justifyContent: "flex-start",
+        justifyContent: "",
         backgroundColor: "#BFCDD9",
+        // backgroundColor: "#E9ECF2",
       }}
     >
       <StatusBar style="auto" />

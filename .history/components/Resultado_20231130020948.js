@@ -15,7 +15,7 @@ const bolhasContainerStyle = {
   alignContent: "center",
   justifyContent: "space-evenly",
 };
-const Resultado = () => {
+const ResultadoTexte = () => {
   const [viewHeight, setViewHeight] = useState(50);
   const toggleHeight = () => {
     const newHeight = viewHeight === 50 ? 200 : 50;
@@ -70,9 +70,8 @@ const Resultado = () => {
     <View
       style={{
         flex: 1,
-        justifyContent: "flex-start",
+        justifyContent: "center",
         alignItems: "center",
-        marginTop: 50
       }}
     >
       <View

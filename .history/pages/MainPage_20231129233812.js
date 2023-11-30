@@ -5,8 +5,6 @@ import Resultado from '../components/Resultado';
 import PaginaTesteee from '../paginaTESTE';
 import Teste2pagina from '../paginaTESTE2';
 import SeuComponentePai from '../SeuComponentePai';
-import ResultadoTexte from '../components/ResultadoTexte';
-import ResultadoTexte2 from '../components/ResultadoTexte2';
 
 const MainPage = () => {
   return (
@@ -14,8 +12,9 @@ const MainPage = () => {
       style={{
         flex: 1,
         alignItems: "center",
-        justifyContent: "flex-start",
+        justifyContent: "center",
         backgroundColor: "#BFCDD9",
+        // backgroundColor: "#E9ECF2",
       }}
     >
       <StatusBar style="auto" />
@@ -24,8 +23,7 @@ const MainPage = () => {
       {/* <PaginaTesteee /> */}
       {/* <Teste2pagina/> */}
       {/* <SeuComponentePai/> */}
-      {/* <ResultadoTexte /> */}
-      {/* <ResultadoTexte2/> */}
+      </>
     </View>
   );
 }

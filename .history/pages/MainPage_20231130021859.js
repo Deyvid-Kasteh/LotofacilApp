@@ -16,9 +16,10 @@ const MainPage = () => {
         alignItems: "center",
         justifyContent: "flex-start",
         backgroundColor: "#BFCDD9",
+        // backgroundColor: "#E9ECF2",
       }}
     >
-      <StatusBar style="auto" />
+      <StatusBar style="auto" SafeAreaView />
       {/* <Text>Lotofácil</Text> */}
       <Resultado />
       {/* <PaginaTesteee /> */}

@@ -15,26 +15,17 @@ const bolhasContainerStyle = {
   alignContent: "center",
   justifyContent: "space-evenly",
 };
-const Resultado = () => {
+const ResultadoTexteA = () => {
   const [viewHeight, setViewHeight] = useState(50);
   const toggleHeight = () => {
     const newHeight = viewHeight === 50 ? 200 : 50;
     setViewHeight(newHeight);
     console.log("mudou");
   };
-
-  const [alturaView1, setAlturaView1] = useState(200);
-
-  const toggleAltura = () => {
-    const novaAltura = alturaView1 === 200 ? 50 : 200;
-    setAlturaView1(novaAltura);
-  };
   const dezenas = latestJson.Dezenas;
-
   const changeStyle = () => {
     console.log(latestJson.Dezenas);
   };
-
   const renderFazerJogo = () => {
     const [chosenNumbers, setChosenNumbers] = useState([]);
     const handleBolhaPress = (numero) => {
@@ -65,14 +56,12 @@ const Resultado = () => {
       );
     }
   };
-
   return (
     <View
       style={{
         flex: 1,
-        justifyContent: "flex-start",
+        justifyContent: "center",
         alignItems: "center",
-        marginTop: 50
       }}
     >
       <View
@@ -96,63 +85,50 @@ const Resultado = () => {
           LOTOFÁCIL
         </Text>
       </View>
-
-      <View
-        key="1"
-        style={[
-          {
-            width: 300,
-            padding: 10,
-            borderRadius: 50,
-            alignItems: "center",
-            elevation: 2,
-            backgroundColor: backgroundColor1,
-            marginBottom: 10,
-          },
-          alturaView1 === 50
-            ? { width: 250, backgroundColor: "#E9ECF2" }
-            : { width: 300, backgroundColor: "#687B8C" },
-        ]}
+          <View
+              key="1"
+        style={{
+          width: 300,
+          height: 230,
+          padding: 10,
+          borderRadius: 50,
+          alignItems: "center",
+          elevation: 2,
+          backgroundColor: backgroundColor1,
+          marginBottom: 10,
+        }}
       >
         <TouchableOpacity
-          style={[
-            {
-              width: 240,
-              backgroundColor: backgroundColor3,
-              elevation: 5,
-              justifyContent: "center",
-              alignItems: "center",
-              padding: 10,
-              borderRadius: 20,
-              marginBottom: 5,
-            },
-            alturaView1 === 50
-              ? { width: 190, backgroundColor: "#BFCDD9" }
-              : { width: 240, backgroundColor: "#E9ECF2" },
-          ]}
-          onPress={() => toggleAltura()}
+          style={{
+            width: 240,
+            backgroundColor: backgroundColor3,
+            elevation: 5,
+            justifyContent: "center",
+            alignItems: "center",
+            padding: 10,
+            borderRadius: 20,
+            marginBottom: 5,
+          }}
+          onPress={() => changeStyle()}
         >
           <Text
             style={{
+              color: backgroundColor2,
               fontSize: 20,
-              color: alturaView1 === 50 ? backgroundColor1 : backgroundColor2,
             }}
           >
             Último Sorteio
           </Text>
         </TouchableOpacity>
 
-        {alturaView1 === 200 && (
-          <View style={bolhasContainerStyle}>
-            {dezenas.map((numero, index) => (
-              <Bubble key={index} numero={numero} />
-            ))}
-          </View>
-        )}
+        <View style={bolhasContainerStyle}>
+          {dezenas.map((numero, index) => (
+            <Bubble key={index} numero={numero} />
+          ))}
+        </View>
       </View>
 
       <View
-        key="2"
         style={[
           {
             width: 300,
@@ -160,6 +136,7 @@ const Resultado = () => {
             borderRadius: 50,
             alignItems: "center",
             elevation: 2,
+            backgroundColor: "#687B8C",
           },
           viewHeight === 50
             ? { width: 250, backgroundColor: "#E9ECF2" }
@@ -170,12 +147,14 @@ const Resultado = () => {
           style={[
             {
               width: 240,
+              backgroundColor: "#394A59",
+              backgroundColor: "#687B8C",
+              backgroundColor: "#E9ECF2",
               elevation: 5,
               justifyContent: "center",
               alignItems: "center",
               padding: 10,
               borderRadius: 20,
-              marginBottom: 5,
             },
             viewHeight === 50
               ? { width: 190, backgroundColor: "#BFCDD9" }
@@ -198,4 +177,4 @@ const Resultado = () => {
   );
 };
 
-export default Resultado;
+export default ResultadoTexteA;

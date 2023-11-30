@@ -14,13 +14,14 @@ const MainPage = () => {
       style={{
         flex: 1,
         alignItems: "center",
-        justifyContent: "flex-start",
+        justifyContent: "center",
         backgroundColor: "#BFCDD9",
+        // backgroundColor: "#E9ECF2",
       }}
     >
       <StatusBar style="auto" />
       {/* <Text>Lotofácil</Text> */}
-      <Resultado />
+      {/* <Resultado /> */}
       {/* <PaginaTesteee /> */}
       {/* <Teste2pagina/> */}
       {/* <SeuComponentePai/> */}

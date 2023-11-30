@@ -15,7 +15,7 @@ const bolhasContainerStyle = {
   alignContent: "center",
   justifyContent: "space-evenly",
 };
-const Resultado = () => {
+const ResultadoTexte = () => {
   const [viewHeight, setViewHeight] = useState(50);
   const toggleHeight = () => {
     const newHeight = viewHeight === 50 ? 200 : 50;
@@ -70,9 +70,8 @@ const Resultado = () => {
     <View
       style={{
         flex: 1,
-        justifyContent: "flex-start",
+        justifyContent: "center",
         alignItems: "center",
-        marginTop: 50
       }}
     >
       <View
@@ -99,37 +98,29 @@ const Resultado = () => {
 
       <View
         key="1"
-        style={[
-          {
-            width: 300,
-            padding: 10,
-            borderRadius: 50,
-            alignItems: "center",
-            elevation: 2,
-            backgroundColor: backgroundColor1,
-            marginBottom: 10,
-          },
-          alturaView1 === 50
-            ? { width: 250, backgroundColor: "#E9ECF2" }
-            : { width: 300, backgroundColor: "#687B8C" },
-        ]}
+        style={{
+          width: 300,
+        //   height: 230,
+          //   height: alturaView1,
+          padding: 10,
+          borderRadius: 50,
+          alignItems: "center",
+          elevation: 2,
+          backgroundColor: backgroundColor1,
+          marginBottom: 10,
+        }}
       >
         <TouchableOpacity
-          style={[
-            {
-              width: 240,
-              backgroundColor: backgroundColor3,
-              elevation: 5,
-              justifyContent: "center",
-              alignItems: "center",
-              padding: 10,
-              borderRadius: 20,
-              marginBottom: 5,
-            },
-            alturaView1 === 50
-              ? { width: 190, backgroundColor: "#BFCDD9" }
-              : { width: 240, backgroundColor: "#E9ECF2" },
-          ]}
+          style={{
+            width: 240,
+            backgroundColor: backgroundColor3,
+            elevation: 5,
+            justifyContent: "center",
+            alignItems: "center",
+            padding: 10,
+            borderRadius: 20,
+            marginBottom: 5,
+          }}
           onPress={() => toggleAltura()}
         >
           <Text
@@ -160,6 +151,7 @@ const Resultado = () => {
             borderRadius: 50,
             alignItems: "center",
             elevation: 2,
+            backgroundColor: "#687B8C",
           },
           viewHeight === 50
             ? { width: 250, backgroundColor: "#E9ECF2" }
@@ -198,4 +190,4 @@ const Resultado = () => {
   );
 };
 
-export default Resultado;
+export default ResultadoTexte;
