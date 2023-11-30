@@ -59,6 +59,43 @@ const Resultado = () => {
   }
 };
 
+
+
+
+  const SeuComponentePai = () => {
+    const [chosenNumbers, setChosenNumbers] = useState([]);
+
+    const handleBolhaPress = (numero) => {
+      if (chosenNumbers.includes(numero)) {
+        setChosenNumbers(chosenNumbers.filter((num) => num !== numero));
+      } else {
+        setChosenNumbers([...chosenNumbers, numero]);
+      }
+    };
+
+    const dezenasParaEscolher = Array.from({ length: 25 }, (_, i) => i + 1);
+
+    return (
+      <View
+        style={{
+          flexWrap: "wrap",
+          flexDirection: "row",
+          alignContent: "center",
+          justifyContent: "space-evenly",
+        }}
+      >
+        {dezenasParaEscolher.map((numero, index) => (
+          <Bolhas
+            key={index}
+            numero={numero}
+            choose={chosenNumbers.includes(numero)}
+            onPress={() => handleBolhaPress(numero)}
+          />
+        ))}
+      </View>
+    );
+  };
+
   return (
     <View
       style={{

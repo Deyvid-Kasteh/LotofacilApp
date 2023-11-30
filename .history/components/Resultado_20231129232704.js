@@ -59,6 +59,43 @@ const Resultado = () => {
   }
 };
 
+
+
+
+  const SeuComponentePai = () => {
+    const [chosenNumbers, setChosenNumbers] = useState([]);
+
+    const handleBolhaPress = (numero) => {
+      if (chosenNumbers.includes(numero)) {
+        setChosenNumbers(chosenNumbers.filter((num) => num !== numero));
+      } else {
+        setChosenNumbers([...chosenNumbers, numero]);
+      }
+    };
+
+    const dezenasParaEscolher = Array.from({ length: 25 }, (_, i) => i + 1);
+
+    return (
+      <View
+        style={{
+          flexWrap: "wrap",
+          flexDirection: "row",
+          alignContent: "center",
+          justifyContent: "space-evenly",
+        }}
+      >
+        {dezenasParaEscolher.map((numero, index) => (
+          <Bolhas
+            key={index}
+            numero={numero}
+            choose={chosenNumbers.includes(numero)}
+            onPress={() => handleBolhaPress(numero)}
+          />
+        ))}
+      </View>
+    );
+  };
+
   return (
     <View
       style={{
@@ -145,6 +182,8 @@ const Resultado = () => {
         </View>
       </View>
 
+      {/* SEPARAÇÃO */}
+      {/* SEPARAÇÃO */}
       <View
         style={[
           {
@@ -193,7 +232,61 @@ const Resultado = () => {
           </Text>
         </TouchableOpacity>
         {renderFazerJogo()}
+
+        {/* {SeuComponentePai()} */}
       </View>
+      
+      {/* <View
+        style={{
+          width: 250,
+          height: 70,
+          // padding: 10,
+          borderRadius: 50,
+          marginTop: 10,
+          alignContent: "center",
+          justifyContent: "center",
+          justifyContent: "space-around",
+          alignItems: "center",
+          elevation: 2,
+          // backgroundColor: "#95ACBF",
+          backgroundColor: "#E9ECF2",
+          // backgroundColor: "#394A59",
+          // backgroundColor: "#687B8C",
+          // backgroundColor: "#BFCDD9",
+          // backgroundColor: "#687B8C",
+        }}
+      >
+        <TouchableOpacity
+          style={{
+            width: 190,
+            backgroundColor: "#394A59",
+            // backgroundColor: "#687B8C",
+            // backgroundColor: "#E9ECF2",
+            backgroundColor: "#95ACBF",
+            backgroundColor: "#BFCDD9",
+
+            // elevation: 2,
+            alignContent: "center",
+            justifyContent: "center",
+            alignItems: "center",
+            padding: 10,
+            borderRadius: 20,
+          }}
+          onPress={() => changeStyle()}
+        >
+          <Text
+            style={{
+              color: "#E9ECF2",
+              color: "#394A59",
+              color: "#687B8C",
+
+              fontSize: 20,
+            }}
+          >
+            Conferir resultado
+          </Text>
+        </TouchableOpacity>
+      </View> */}
     </View>
   );
 };
