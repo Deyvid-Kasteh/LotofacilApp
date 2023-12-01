@@ -12,7 +12,7 @@ const Jogo = ({ numerosSelecionados }) => {
 
       // Chame a função onDelete para atualizar a lista
       // onDelete();
-      console.log("Chame a função onDelete");
+      console.log("Chame a função onDelete")
     } catch (error) {
       console.error("Erro ao deletar jogo:", error);
     }
@@ -59,6 +59,7 @@ const Jogo = ({ numerosSelecionados }) => {
           </Text>
         </View>
       ))}
+      
       <TouchableOpacity
         onPress={handleDelete}
         style={{
@@ -74,8 +75,7 @@ const Jogo = ({ numerosSelecionados }) => {
         <Text
           style={{
             fontSize: 9,
-            // color: Cores.cor5,
-            color: "red",
+            color: Cores.cor5,
           }}
         >
           X

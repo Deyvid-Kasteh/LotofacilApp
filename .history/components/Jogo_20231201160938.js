@@ -1,5 +1,10 @@
+
+
+
+
+
 import React from "react";
-import { View, Text, TouchableOpacity } from "react-native";
+import { View, Text } from "react-native";
 import * as Cores from "../assets/Cores";
 
 const Jogo = ({ numerosSelecionados }) => {
@@ -11,8 +16,7 @@ const Jogo = ({ numerosSelecionados }) => {
       // ...
 
       // Chame a função onDelete para atualizar a lista
-      // onDelete();
-      console.log("Chame a função onDelete");
+      onDelete();
     } catch (error) {
       console.error("Erro ao deletar jogo:", error);
     }
@@ -59,8 +63,7 @@ const Jogo = ({ numerosSelecionados }) => {
           </Text>
         </View>
       ))}
-      <TouchableOpacity
-        onPress={handleDelete}
+      <View
         style={{
           width: 16,
           height: 16,
@@ -68,19 +71,17 @@ const Jogo = ({ numerosSelecionados }) => {
           justifyContent: "center",
           borderRadius: 50,
           backgroundColor: Cores.cor1,
-          marginLeft: 5,
         }}
       >
         <Text
           style={{
             fontSize: 9,
-            // color: Cores.cor5,
-            color: "red",
+            color: Cores.cor5,
           }}
         >
           X
         </Text>
-      </TouchableOpacity>
+      </View>
     </View>
   );
 };

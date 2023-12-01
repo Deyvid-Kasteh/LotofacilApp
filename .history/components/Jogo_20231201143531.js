@@ -1,29 +1,19 @@
+import { View, Text } from "react-native";
 import React from "react";
-import { View, Text, TouchableOpacity } from "react-native";
+import latestJson from "../Latest.json";
 import * as Cores from "../assets/Cores";
 
-const Jogo = ({ numerosSelecionados }) => {
-  // Ordenar os números em ordem crescente
-  const numerosOrdenados = [...numerosSelecionados].sort((a, b) => a - b);
-  const handleDelete = async () => {
-    try {
-      // Adicione a lógica para deletar o jogo do AsyncStorage
-      // ...
+const dezenas = latestJson.Dezenas;
 
-      // Chame a função onDelete para atualizar a lista
-      // onDelete();
-      console.log("Chame a função onDelete");
-    } catch (error) {
-      console.error("Erro ao deletar jogo:", error);
-    }
-  };
-
+const Jogo = () => {
   return (
     <View
       style={{
         width: 320,
         height: 26,
+        // borderWidth: 1,
         backgroundColor: Cores.cor2,
+
         borderColor: "black",
         borderRadius: 20,
         flexWrap: "nowrap",
@@ -33,15 +23,14 @@ const Jogo = ({ numerosSelecionados }) => {
         alignItems: "center",
         justifyContent: "flex-start",
         paddingLeft: 10,
-        paddingRight: 10,
       }}
     >
-      {numerosOrdenados.map((numero, index) => (
+      {dezenas.map((numero, index) => (
         <View
           key={index}
           style={{
             width: 15,
-            height: 18,
+            height: 15,
             alignItems: "center",
             justifyContent: "center",
             borderRadius: 50,
@@ -59,28 +48,28 @@ const Jogo = ({ numerosSelecionados }) => {
           </Text>
         </View>
       ))}
-      <TouchableOpacity
-        onPress={handleDelete}
+      {/* <View><Text>Excluir</Text></View> */}
+      <View
+        key={index}
         style={{
-          width: 16,
-          height: 16,
+          width: 15,
+          height: 15,
           alignItems: "center",
           justifyContent: "center",
           borderRadius: 50,
           backgroundColor: Cores.cor1,
-          marginLeft: 5,
+          margin: 1,
         }}
       >
         <Text
           style={{
             fontSize: 9,
-            // color: Cores.cor5,
-            color: "red",
+            color: Cores.cor5,
           }}
         >
-          X
+          {numero}
         </Text>
-      </TouchableOpacity>
+      </View>
     </View>
   );
 };

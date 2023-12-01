@@ -41,40 +41,53 @@ const ResultadoTexte = () => {
 
   const dezenas = latestJson.Dezenas;
 
+
   const renderFazerJogo = () => {
+    const [fileName, setFileName] = useState("");
+
+
     const [chosenNumbers, setChosenNumbers] = useState([]);
     const bolhasSelecionadas = chosenNumbers.length;
-    const onSaveJogoPress = async () => {
-      if (bolhasSelecionadas === 15) {
-        try {
-          // Recupera os jogos já salvos (se existirem)
-          const jogosSalvosJSON = await AsyncStorage.getItem("meusJogos");
-          const jogosSalvos = jogosSalvosJSON
-            ? JSON.parse(jogosSalvosJSON)
-            : [];
 
-          // Cria um objeto representando o jogo atual
-          const jogoAtual = {
-            numerosSelecionados: chosenNumbers,
-            data: new Date().toLocaleString(),
-          };
 
-          // Adiciona o jogo atual à lista de jogos
-          jogosSalvos.push(jogoAtual);
+    
 
-          // Salva a lista atualizada de jogos no AsyncStorage
-          await AsyncStorage.setItem("meusJogos", JSON.stringify(jogosSalvos));
 
-          console.log("Jogo salvo!");
-          // Limpa os números escolhidos após salvar o jogo
-          setChosenNumbers([]);
-        } catch (error) {
-          console.error("Erro ao salvar o jogo:", error);
-        }
-      } else {
-        console.log("Selecione exatamente 15 números para salvar o jogo.");
-      }
-    };
+
+     const onSaveJogoPress = async () => {
+       if (bolhasSelecionadas === 15) {
+         try {
+           // Recupera os jogos já salvos (se existirem)
+           const jogosSalvosJSON = await AsyncStorage.getItem("meusJogos");
+           const jogosSalvos = jogosSalvosJSON
+             ? JSON.parse(jogosSalvosJSON)
+             : [];
+
+           // Cria um objeto representando o jogo atual
+           const jogoAtual = {
+             numerosSelecionados: chosenNumbers,
+             data: new Date().toLocaleString(),
+           };
+
+           // Adiciona o jogo atual à lista de jogos
+           jogosSalvos.push(jogoAtual);
+
+           // Salva a lista atualizada de jogos no AsyncStorage
+           await AsyncStorage.setItem("meusJogos", JSON.stringify(jogosSalvos));
+
+           console.log("Jogo salvo!");
+         } catch (error) {
+           console.error("Erro ao salvar o jogo:", error);
+         }
+       } else {
+         console.log("Selecione exatamente 15 números para salvar o jogo.");
+       }
+     };
+
+
+
+
+
     const handleBolhaPress = (numero) => {
       if (chosenNumbers.includes(numero)) {
         setChosenNumbers(chosenNumbers.filter((num) => num !== numero));
@@ -129,14 +142,24 @@ const ResultadoTexte = () => {
                 SALVAR JOGO
               </Text>
             </TouchableOpacity>
-            {/* <TouchableOpacity onPress={onDeleteJogosPress}>
-              <Text style={{ color: "red" }}>DELETAR JOGOS</Text>
-            </TouchableOpacity> */}
           </View>
         </View>
       );
     }
   };
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   const renderConferirJogos = () => {
     const [chosenNumbers, setChosenNumbers] = useState([]);
@@ -333,6 +356,7 @@ const ResultadoTexte = () => {
         </TouchableOpacity>
         {renderConferirJogos()}
         {/* <MostrarJogosSalvos/> */}
+
       </View>
     </View>
   );

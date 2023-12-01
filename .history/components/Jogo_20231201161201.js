@@ -75,7 +75,6 @@ const Jogo = ({ numerosSelecionados }) => {
           style={{
             fontSize: 9,
             // color: Cores.cor5,
-            color: "red",
           }}
         >
           X

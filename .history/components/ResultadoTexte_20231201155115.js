@@ -66,8 +66,6 @@ const ResultadoTexte = () => {
           await AsyncStorage.setItem("meusJogos", JSON.stringify(jogosSalvos));
 
           console.log("Jogo salvo!");
-          // Limpa os números escolhidos após salvar o jogo
-          setChosenNumbers([]);
         } catch (error) {
           console.error("Erro ao salvar o jogo:", error);
         }
@@ -129,9 +127,6 @@ const ResultadoTexte = () => {
                 SALVAR JOGO
               </Text>
             </TouchableOpacity>
-            {/* <TouchableOpacity onPress={onDeleteJogosPress}>
-              <Text style={{ color: "red" }}>DELETAR JOGOS</Text>
-            </TouchableOpacity> */}
           </View>
         </View>
       );

@@ -129,9 +129,6 @@ const ResultadoTexte = () => {
                 SALVAR JOGO
               </Text>
             </TouchableOpacity>
-            {/* <TouchableOpacity onPress={onDeleteJogosPress}>
-              <Text style={{ color: "red" }}>DELETAR JOGOS</Text>
-            </TouchableOpacity> */}
           </View>
         </View>
       );

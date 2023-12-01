@@ -27,7 +27,7 @@ const MainPage = () => {
       {/* <SeuComponentePai/> */}
       <ResultadoTexte />
       {/* <ResultadoTexte2/> */}
-      {/* <MostrarJogosSalvos /> */}
+      <MostrarJogosSalvos />
     </View>
   );
 }
