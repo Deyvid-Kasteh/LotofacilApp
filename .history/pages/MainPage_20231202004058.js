@@ -8,7 +8,6 @@ import SeuComponentePai from '../SeuComponentePai';
 import ResultadoTexte from '../components/ResultadoTexte';
 import ResultadoTexte2 from '../components/ResultadoTexte2';
 import MostrarJogosSalvos from '../components/MostrarJogosSalvos';
-import ResultadoTexteParaFazerCorreções from '../paginaTESTE';
 
 
 const MainPage = () => {
@@ -30,7 +29,7 @@ const MainPage = () => {
       <ResultadoTexte />
       {/* <ResultadoTexte2/> */}
       {/* <MostrarJogosSalvos /> */}
-      {/* <ResultadoTexteParaFazerCorreções/> */}
+      <ResultadoTexteParaFazerCorreções/>
     </View>
   );
 }

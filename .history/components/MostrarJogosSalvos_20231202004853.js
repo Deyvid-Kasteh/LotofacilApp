@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from "react";
 import { View, Text, TouchableOpacity } from "react-native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
@@ -7,17 +6,10 @@ import Jogo from "./Jogo";
 const MostrarJogosSalvos = () => {
   const [jogosSalvos, setJogosSalvos] = useState([]);
 
-  // Adicione a função saveJogos
-  const saveJogos = async (jogos) => {
-    try {
-      await AsyncStorage.setItem("meusJogos", JSON.stringify(jogos));
-    } catch (error) {
-      console.error("Erro ao salvar jogos:", error);
-    }
-  };
 
   const handleDelete = async (index) => {
     try {
+      // Remover o jogo do array
       const jogosAtualizados = [...jogosSalvos];
       jogosAtualizados.splice(index, 1);
 
@@ -65,3 +57,4 @@ const MostrarJogosSalvos = () => {
 };
 
 export default MostrarJogosSalvos;
+

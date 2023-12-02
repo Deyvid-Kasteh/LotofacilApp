@@ -27,10 +27,10 @@ const MainPage = () => {
       {/* <PaginaTesteee /> */}
       {/* <Teste2pagina/> */}
       {/* <SeuComponentePai/> */}
-      <ResultadoTexte />
+      {/* <ResultadoTexte /> */}
       {/* <ResultadoTexte2/> */}
       {/* <MostrarJogosSalvos /> */}
-      {/* <ResultadoTexteParaFazerCorreções/> */}
+      <ResultadoTexteParaFazerCorreções/>
     </View>
   );
 }

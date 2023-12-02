@@ -30,7 +30,7 @@ const MainPage = () => {
       <ResultadoTexte />
       {/* <ResultadoTexte2/> */}
       {/* <MostrarJogosSalvos /> */}
-      {/* <ResultadoTexteParaFazerCorreções/> */}
+      <ResultadoTexteParaFazerCorreções/>
     </View>
   );
 }

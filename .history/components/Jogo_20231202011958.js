@@ -97,6 +97,10 @@ const Jogo = ({ numerosSelecionados, onDelete }) => {
 
   const handleDelete = async () => {
     try {
+      // Adicione a lógica para deletar o jogo do AsyncStorage
+      // ...
+
+      // Chame a função onDelete para atualizar a lista
       onDelete();
       console.log("Chame a função onDelete");
     } catch (error) {
